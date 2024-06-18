@@ -14,7 +14,9 @@ Ask the user: (6) Do you prefer to survey your students with Google Forms or Mic
 
 If the answer is yes, ask:
 Upload a list of more experienced TAs and choose the time slots that need more experienced TAs. Take the user's answers in (10) in a grid that is created from their answers in (3) or (5). Create the form that is chosen in (6), and give options to rate each time slot by 0-4 chosen in either (3) or (5). These forms will contain exact instructions.
-Set 2:
+
+
+##Set 2:##
 
 Use the data from Set 1.
 Set up a linear programming problem with binary variables x1, x2,... that correspond to each time slot assigned in (3) and (5).
