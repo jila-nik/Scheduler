@@ -19,7 +19,7 @@ Upload a list of more experienced TAs and choose the time slots that need more e
 ##Set 2:##
 
 Use the data from Set 1.
-Set up a linear programming problem with binary variables x1, x2,... that correspond to each time slot assigned in (3) and (5).
+Set up a linear programming problem with a set of binary variables for each TA, x1, x2,... that correspond to each time slot assigned in (3) and (5).
 
 Constraints:
 (A) Each TA’s schedule average rate should be ≤ 2.
