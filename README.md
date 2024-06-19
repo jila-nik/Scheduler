@@ -1,4 +1,4 @@
-## Academics: Scheduling a help room for math, physics, and writing with TAs/instructors. We may add a feature for scheduling teaching assignments as well. I have a feeling that a teaching schedule is easier with marriage perposal algorithm (Gale–Shapley algorithm ). We need to investigate that.
+## Academics: Scheduling a help room, for math, physics, or writing, with TAs/instructors. We may add a feature for scheduling teaching assignments as well. I have a feeling that a teaching schedule is easier with marriage perposal algorithm (Gale–Shapley algorithm ). We need to investigate that.
 
 We know at least two sets of codes need to be written.
 
@@ -20,12 +20,12 @@ ________________________________________________________________________________
 ## Set 2:
 
 Use the data from Set 1.
-Set up a linear programming problem with a set of binary variables for each TA, x1, x2,... that correspond to each time slot assigned in (3) and (5).
+Set up a linear programming problem with a set of binary variables for each TA, $x_1, x_2,...,x_n$ that correspond to each time slot assigned in (3) and (5).
 
 Constraints:
 * (A) Each TA’s average schedule rate should be ≥ 2. (This needs a bit of pondering because we want to include some back to back assignment rating.)
 
-* (B) The number of TAs in each time slot should be ≥ the minimum number of TAs needed for that time slot. This number can differe by how busy the help room is during the different hours of teh day. 
+* (B) The number of TAs in each time slot should be ≥ the minimum number of TAs needed for that time slot. This number can differe by how busy the help room is during the different hours of the day. 
 
 * (C) The number of hours assigned to each TA should be  ≤  than the maximum number that can be assigned to them. This can vary from TA to TA according to their contract and responsibilities.
 
