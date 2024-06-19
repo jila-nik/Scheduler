@@ -1,10 +1,10 @@
-Academic: Scheduling a help room for math, physics, and writing with TAs/instructors. We may add a feature for scheduling teaching assignments as well.
+Academic: Scheduling a help room for math, physics, and writing with TAs/instructors. We may add a feature for scheduling teaching assignments as well. I have a feeling that a teaching schedule is easier with marriage perposal algorithm (Gale–Shapley algorithm ). We need to investigate that.
 
 We know at least two sets of codes need to be written.
 
 ## Set 1:
 
-Ask the user (the manager or supervisor) a few questions so the nature of the scheduling becomes apparent to us. Then use the user's answers to create surveys for TAs to rate every time slot according to their preference.
+Ask the user (the manager or supervisor) a few questions so the nature of the scheduling becomes apparent to us. Then use the user's answers to create surveys for TAs to rate every time slot according to their preference and rate if they want back to back assignments.
 
 Questions: (1) Are you creating a repeating weekly schedule? (2) What is the time interval length you wish to schedule each TA? The answer has to be reasonable, so give two options: 30 minutes or 1 hour. If the answer to (1) is yes, create a grid with days of the week as rows and the columns are all of the time slots of the length provided in (2) in a day starting at midnight. Assign an array to this grid so you can create a schedule later and ask: (3) Choose all time slots that you need to schedule and the number of TAs needed.
 
@@ -22,8 +22,10 @@ Use the data from Set 1.
 Set up a linear programming problem with a set of binary variables for each TA, x1, x2,... that correspond to each time slot assigned in (3) and (5).
 
 Constraints:
-(A) Each TA’s schedule average rate should be ≤ 2.
-(B) The minimum number of TAs should be assigned in each time slot.
-(C) The number of hours assigned to each TA is less than the maximum.
+(A) Each TA’s average schedule rate should be ≥ 2. (This needs a bit of pondering because we want to include some back to back assignment rating.)
+
+(B) The number of TAs in each time slot should be ≥ the minimum number of TAs needed for that time slot. This number can differe by how busy the help room is during the different hours of teh day. 
+
+(C) The number of hours assigned to each TA should be  ≤  than the maximum number that can be assigned to them. This can vary from TA to TA according to their contract and responsibilities.
 
 Give the result in a table for the user.
