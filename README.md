@@ -1,4 +1,4 @@
-### (We are starting mid-september 2024. Let us know if you want to join.)
+### (We are starting mid-January 2025. Let us know if you want to join.)
 ## Academics: Scheduling a help room, for math, physics, or writing, with TAs/instructors. We may add a feature for scheduling teaching assignments as well. I have a feeling that a teaching schedule is easier with marriage perposal algorithm (Gale–Shapley algorithm ). We need to investigate that.
 
 We know at least two sets of codes need to be written.
